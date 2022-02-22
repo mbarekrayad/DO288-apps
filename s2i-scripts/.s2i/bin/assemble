@@ -8,6 +8,12 @@ echo "---> Enabling s2i support in httpd24 image"
 
 config_s2i
 
+cp -Rf temp/src/*.html ./
+
+DATE='date= 2/2/2022'
+
+echo "page info $DATE" > ./info.html
+echo "2eme ligne "
 
 if [ -d ./httpd-cfg ]; then
   echo "---> Copying httpd configuration files..."
