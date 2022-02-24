@@ -8,7 +8,7 @@ echo "---> Enabling s2i support in httpd24 image"
 
 config_s2i
 
-cp -Rf /tmp/src/*.html ./
+cp -Rf /tmp/src/*.* ./
 
 DATE='date "2/2/2022"'
 
