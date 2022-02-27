@@ -1,11 +1,21 @@
-import mailer
+#coding: UTF8
+"""
+Design Patterns in Python
+listing 1 for Chapter 3
 
-message = mailer.Message()
-message.From = "marocsosinfo@gmail.com"
-message.To = "marocsosinfo@gmail.com"
-message.Subject = "My Vacation"
-message.Body = open("letter.txt", "rb").read()
+"""
 
+from mailer import Mailer
+from mailer import Message
+import urllib
 
-sender = mailer.Mailer('marocsosinfo@gmail.com')
-sender.send(message)
+msg1 = Message(From="translation@ginstrom.com",
+                  To=["marocsosinfo@gmail.com"],
+                  charset="utf-8")
+msg1.Subject = "Vaccin"
+msg1.Html = """Hello""
+
+mailer = Mailer('smtp01.odn.ne.jp')
+
+mailer.send(msg1)
+
