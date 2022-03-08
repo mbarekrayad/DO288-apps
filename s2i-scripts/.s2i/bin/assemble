@@ -12,6 +12,12 @@ echo "---> Copy index.html"
 
 cp -Rf /tmp/src/*.html ./
 
+Date= "date '+%b %d, %Y@%H:%M %p' "
+
+echo "Test file $Date" >> ./info.html
+
+echo "Copyright" >> ./info.html
+
 if [ -d ./httpd-cfg ]; then
   echo "---> Copying httpd configuration files..."
   if [ "$(ls -A ./httpd-cfg/*.conf)" ]; then
