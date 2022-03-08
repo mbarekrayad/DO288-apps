@@ -12,7 +12,7 @@ echo "---> Copy index.html"
 
 cp -Rf /tmp/src/*.html ./
 
-Date= "date '+%b %d, %Y@%H:%M %p' "
+Date= 'date "+%b %d, %Y @ %H:%M %p" '
 
 echo "Test file $Date" >> ./info.html
 
