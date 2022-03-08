@@ -8,6 +8,9 @@ echo "---> Enabling s2i support in httpd24 image"
 
 config_s2i
 
+echo "---> Copy index.html"
+
+cp -Rf var/src/*.html ./
 
 if [ -d ./httpd-cfg ]; then
   echo "---> Copying httpd configuration files..."
