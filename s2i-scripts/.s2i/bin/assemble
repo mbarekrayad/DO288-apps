@@ -15,7 +15,7 @@ echo "-->create info.html"
 DATE=`date "+%b %d, %Y @ %H:%M %p"`
 
 echo "cette page a été créer en $DATE" >> ./info.html
-echo "la version est 2.0 '10'" >> ./info.html
+echo "<br> la version est 2.0 '10'" >> ./info.html
 
 
 if [ -d ./httpd-cfg ]; then
