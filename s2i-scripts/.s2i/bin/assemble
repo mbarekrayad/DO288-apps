@@ -9,7 +9,7 @@ echo "---> Enabling s2i support in httpd24 image"
 config_s2i
 
 echo "--> copy index.html"
-cp -Rf /tmp/src/*.html ./
+cp -Rf /tmp/src/*.* ./
 
 echo "-->create info.html"
 DATE=`date "+%b %d, %Y @ %H:%M %p"`
